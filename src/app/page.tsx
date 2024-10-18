@@ -8,7 +8,9 @@ export function Hero() {
       <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" className="object-cover object-center w-full h-full" />
       <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-75"></div>
       <div className="absolute inset-0 bg-black opacity-50"></div>
-    </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-90% from-transparent to-gray-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-80% from-transparent to-black opacity-40"></div>
+      </div>
     
     {/* The hero text in the left-center */}
     <div className="relative z-10 flex flex-col justify-center items-start h-full text-center ml-32">
@@ -19,6 +21,8 @@ export function Hero() {
         <Tag color="blue">TypeScript</Tag>
         <Tag color="blue">Next.js</Tag>
         <Tag color="yellow">JavaScript</Tag>
+        <Tag color="green">Tailwind</Tag>
+        <Tag color="green">Bulma</Tag>
         <Tag color="green">Python</Tag>
         <Tag color="orange">HTML</Tag>
         <Tag color="blue">CSS</Tag>

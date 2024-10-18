@@ -15,9 +15,19 @@ const colorClasses: Record<TagColor, string> = {
   teal: 'bg-teal-200 text-teal-800',
 };
 
-const Tag = ({ children, color = 'gray' }: { children: React.ReactNode, color?: TagColor }) => {
+type TextSize = 'xs' | 'sm' | 'normal' | 'lg' | 'xl'
+
+const textSizes: Record<TextSize, string> = {
+    xs: 'text-xs',
+    sm: 'text-sm',
+    normal: 'text-base',
+    lg: 'text-lg',
+    xl: 'text-xl',
+};
+
+const Tag = ({ children, color = 'gray', size = 'normal' }: { children: React.ReactNode, color?: TagColor, size?: TextSize }) => {
   return (
-    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${colorClasses[color]}`}>
+    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full ${textSizes[size ?? 'normal']} font-medium ${colorClasses[color]}`}>
       {children}
     </span>
   );

@@ -17,9 +17,9 @@ export function Navbar() {
   return (
     <div className="relative">
         {/* Adjusted gradient overlay */}
-        <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-gray-900/0 to-gray-900/50 pointer-events-none"></div>
+        <div className="h-8 absolute inset-x-0 bottom-0 bg-gradient-to-b from-gray-900/0 to-gray-900/50 pointer-events-none"></div>
     
-        <nav className="bg-gradient-to-r from-gray-900 to-sky-950 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 shadow sm:items-baseline w-full z-10">
+        <nav className="h-16 bg-gradient-to-r from-gray-900 to-sky-950 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 shadow sm:items-baseline w-full z-10">
             <div className="mb-2 sm:mb-0">
             <a
                 href="#"
@@ -36,7 +36,5 @@ export function Navbar() {
             </div>
         </nav>
     </div>
-
-
   );
 }

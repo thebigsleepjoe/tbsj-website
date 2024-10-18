@@ -25,9 +25,9 @@ const textSizes: Record<TextSize, string> = {
     xl: 'text-xl',
 };
 
-const Tag = ({ children, color = 'gray', size = 'normal' }: { children: React.ReactNode, color?: TagColor, size?: TextSize }) => {
+const Tag = ({ children, color = 'gray', size = 'normal', smallSize = 'sm' }: { children: React.ReactNode, color?: TagColor, size?: TextSize, smallSize?: TextSize }) => {
   return (
-    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full ${textSizes[size ?? 'normal']} font-medium ${colorClasses[color]}`}>
+    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full md:${textSizes[size]} sm:${textSizes[smallSize]} font-medium ${colorClasses[color]}`}>
       {children}
     </span>
   );

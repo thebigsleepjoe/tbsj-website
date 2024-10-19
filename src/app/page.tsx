@@ -24,7 +24,7 @@ export function Hero() {
           @thebigsleepjoe
         </h1>
         <p className="md:text-3xl text-sm text-gray-300 mb-2">
-          {"$"} Software Engineer • Web Developer • IT Specialist
+          Software Engineer • Web Developer • IT Specialist
         </p>
         <div className="flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs md:mt-32 mt-16 justify-center">
           <Tag size="lg" color="blue">React</Tag>

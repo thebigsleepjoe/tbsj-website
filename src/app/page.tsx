@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Tag from "./tag";
+import { TagDark } from "./tag";
 
 export function Hero() {
   return (
@@ -27,27 +27,27 @@ export function Hero() {
           Software Engineer • Web Developer • IT Specialist
         </p>
         <div className="flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs md:mt-32 mt-16 justify-center">
-          <Tag size="lg" color="blue">React</Tag>
-          <Tag size="lg" color="blue">TypeScript</Tag>
-          <Tag size="lg" color="blue">Next.js</Tag>
-          <Tag size="lg" color="yellow">JavaScript</Tag>
-          <Tag size="lg" color="green">Tailwind</Tag>
-          <Tag size="lg" color="green">Bulma</Tag>
-          <Tag size="lg" color="green">Python</Tag>
-          <Tag size="lg" color="orange">HTML</Tag>
-          <Tag size="lg" color="blue">CSS</Tag>
-          <Tag size="lg" color="purple">Lua</Tag>
-          <Tag size="lg" color="purple">Love2D</Tag>
-          <Tag size="lg" color="green">AI</Tag>
-          <Tag size="lg" color="green">Machine Learning</Tag>
-          <Tag size="lg" color="green">LLMs</Tag>
-          <Tag size="lg" color="red">Game Design</Tag>
-          <Tag size="lg" color="red">Game Modding</Tag>
-          <Tag size="lg" color="orange">Git</Tag>
-          <Tag size="lg" color="orange">GNU/Linux</Tag>
-          <Tag size="lg" color="teal">IoT</Tag>
-          <Tag size="lg" color="blue">Windows</Tag>
-          <Tag size="lg" color="yellow">Networking</Tag>
+          <TagDark size="lg" color="blue">React</TagDark>
+          <TagDark size="lg" color="blue">TypeScript</TagDark>
+          <TagDark size="lg" color="blue">Next.js</TagDark>
+          <TagDark size="lg" color="yellow">JavaScript</TagDark>
+          <TagDark size="lg" color="green">Tailwind</TagDark>
+          <TagDark size="lg" color="green">Bulma</TagDark>
+          <TagDark size="lg" color="green">Python</TagDark>
+          <TagDark size="lg" color="orange">HTML</TagDark>
+          <TagDark size="lg" color="blue">CSS</TagDark>
+          <TagDark size="lg" color="purple">Lua</TagDark>
+          <TagDark size="lg" color="purple">Love2D</TagDark>
+          <TagDark size="lg" color="green">AI</TagDark>
+          <TagDark size="lg" color="green">Machine Learning</TagDark>
+          <TagDark size="lg" color="green">LLMs</TagDark>
+          <TagDark size="lg" color="red">Game Design</TagDark>
+          <TagDark size="lg" color="red">Game Modding</TagDark>
+          <TagDark size="lg" color="orange">Git</TagDark>
+          <TagDark size="lg" color="orange">GNU/Linux</TagDark>
+          <TagDark size="lg" color="teal">IoT</TagDark>
+          <TagDark size="lg" color="blue">Windows</TagDark>
+          <TagDark size="lg" color="yellow">Networking</TagDark>
         </div>
       </div>
 

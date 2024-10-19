@@ -12,7 +12,7 @@ type TagColor =
   | "orange"
   | "teal";
 
-const colorClasses: Record<TagColor, string> = {
+const colorClassesLight: Record<TagColor, string> = {
   gray: "bg-gray-200 text-gray-800",
   red: "bg-red-200 text-red-800",
   yellow: "bg-yellow-200 text-yellow-800",
@@ -23,6 +23,19 @@ const colorClasses: Record<TagColor, string> = {
   pink: "bg-pink-200 text-pink-800",
   orange: "bg-orange-200 text-orange-800",
   teal: "bg-teal-200 text-teal-800",
+};
+
+const colorClassesDark: Record<TagColor, string> = {
+  gray: "bg-gradient-to-r from-gray-700 to-gray-900",
+  red: "bg-gradient-to-r from-red-500 to-red-900",
+  yellow: "bg-gradient-to-r from-yellow-600 to-yellow-900",
+  green: "bg-gradient-to-r from-green-600 to-green-900",
+  blue: "bg-gradient-to-r from-blue-500 to-blue-900",
+  indigo: "bg-gradient-to-r from-indigo-700 to-indigo-900",
+  purple: "bg-gradient-to-r from-purple-600 to-purple-900",
+  pink: "bg-gradient-to-r from-pink-700 to-pink-900",
+  orange: "bg-gradient-to-r from-orange-600 to-orange-800",
+  teal: "bg-gradient-to-r from-teal-700 to-teal-900",
 };
 
 type TextSize = "xs" | "sm" | "normal" | "lg" | "xl";
@@ -36,7 +49,7 @@ const sizeClasses = {
   xl: "text-base md:text-xl",
 };
 
-const Tag = (
+export const Tag = (
   { children, color = "gray", size = "normal" }: {
     children: any;
     color: TagColor;
@@ -44,7 +57,7 @@ const Tag = (
   },
 ) => {
   const sizeClass = sizeClasses[size];
-  const colorClass = colorClasses[color];
+  const colorClass = colorClassesLight[color];
 
   return (
     <span
@@ -52,6 +65,27 @@ const Tag = (
     >
       {children}
     </span>
+  );
+};
+
+export const TagDark = (
+  { children, color = "gray", size = "normal" }: {
+    children: any;
+    color: TagColor;
+    size: TextSize;
+  },
+) => {
+  const sizeClass = sizeClasses[size];
+  const colorClass = colorClassesDark[color];
+
+  return (
+    <div className={`p-[2px] ${colorClass} rounded-full ${sizeClass}`}>
+      <div
+        className={`bg-black h-full w-full rounded-full px-2.5 py-0.5 font-medium`}
+      >
+        {children}
+      </div>
+    </div>
   );
 };
 

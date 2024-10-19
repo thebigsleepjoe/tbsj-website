@@ -1,6 +1,6 @@
 import React from 'react';
 
-type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'hr';
 
 interface DocProps {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface DocProps {
 interface DocElementProps {
   as?: HeadingLevel | 'p';
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export function Doc({ children }: DocProps) {
@@ -36,6 +36,7 @@ export function DocElement(
     h5: 'text-lg md:text-2xl font-medium mb-4 mt-8',
     h6: 'text-base md:text-xl font-medium mb-4 mt-8',
     p: 'text-lg md:text-2xl mb-4 mt-2',
+    hr: 'border-gray-700 my-12'
   };
 
   return (

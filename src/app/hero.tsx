@@ -5,7 +5,6 @@ import { TagDark } from './tag';
 export function Hero() {
   return (
     <div className='xl:-mt-16 -z-10 relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden md:pb-32 pb-0'>
-
       {/* This is for the gradients */}
       <div className='-mt-16 -z-10 absolute inset-0'>
         <img
@@ -56,7 +55,7 @@ export function Hero() {
           <TagDark size='lg' color='green'>Editing</TagDark>
           <TagDark size='lg' color='red'>Data Analysis</TagDark>
           <TagDark size='lg' color='yellow'>Web Scraping</TagDark>
-          </div>
+        </div>
       </div>
 
       <div className='z-10 flex flex-col items-center h-full text-center p-0'>

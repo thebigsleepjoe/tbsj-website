@@ -23,7 +23,7 @@ export function NavbarItem({
   return (
     <a
       href={href}
-      className="block text-lg no-underline text-gray-400 hover:text-gray-100 py-2 sm:inline-block sm:ml-5"
+      className="block text-lg no-underline text-gray-400 hover:text-gray-100 py-2 sm:inline-block sm:ml-5 hover:animate-pulse"
     >
       <FontAwesomeIcon icon={icon} />
       <span className="ml-2">{text}</span>
@@ -45,7 +45,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a
               href="#"
-              className="text-2xl no-underline text-gray-400 hover:text-blue-dark"
+              className="text-2xl no-underline text-gray-400 hover:text-gray-100 hover:animate-pulse"
             >
               <FontAwesomeIcon icon={faMoon} />
               <span className="ml-2">bigsleepjoe.com</span>

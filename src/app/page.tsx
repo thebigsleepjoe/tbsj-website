@@ -16,29 +16,29 @@ export function Hero() {
     <div className="md:-mt-16 relative z-10 flex flex-col justify-center items-center h-full text-center">
       <h1 className="md:text-7xl text-3xl font-bold leading-tight mb-4">@thebigsleepjoe</h1>
       <p className="md:text-3xl text-sm text-gray-300 mb-2">{'$'} Software Engineer • Web Developer • IT Specialist</p>
-      <div className="flex flex-wrap gap-3 md:max-w-2xl max-w-xs md:mt-32 mt-16 justify-center">
-        <Tag size='lg' smallSize='xs' color="blue">React</Tag>
-        <Tag size='lg' smallSize='xs' color="blue">TypeScript</Tag>
-        <Tag size='lg' smallSize='xs' color="blue">Next.js</Tag>
-        <Tag size='lg' smallSize='xs' color="yellow">JavaScript</Tag>
-        <Tag size='lg' smallSize='xs' color="green">Tailwind</Tag>
-        <Tag size='lg' smallSize='xs' color="green">Bulma</Tag>
-        <Tag size='lg' smallSize='xs' color="green">Python</Tag>
-        <Tag size='lg' smallSize='xs' color="orange">HTML</Tag>
-        <Tag size='lg' smallSize='xs' color="blue">CSS</Tag>
-        <Tag size='lg' smallSize='xs' color="purple">Lua</Tag>
-        <Tag size='lg' smallSize='xs' color="purple">Love2D</Tag>
-        <Tag size='lg' smallSize='xs' color="green">AI</Tag>
-        <Tag size='lg' smallSize='xs' color="green">Machine Learning</Tag>
-        <Tag size='lg' smallSize='xs' color="green">LLMs</Tag>
-        <Tag size='lg' smallSize='xs' color="red">Game Design</Tag>
-        <Tag size='lg' smallSize='xs' color="red">Game Modding</Tag>
-        <Tag size='lg' smallSize='xs' color="orange">Git</Tag>
-        <Tag size='lg' smallSize='xs' color="orange">GNU/Linux</Tag>
-        <Tag size='lg' smallSize='xs' color="teal">IoT</Tag>
-        <Tag size='lg' smallSize='xs' color="blue">Windows</Tag>
-        <Tag size='lg' smallSize='xs' color="yellow">Networking</Tag>
-      </div>
+      <div className="flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs md:mt-32 mt-16 justify-center">
+        <Tag size='lg' color="blue">React</Tag>
+        <Tag size='lg' color="blue">TypeScript</Tag>
+        <Tag size='lg' color="blue">Next.js</Tag>
+        <Tag size='lg' color="yellow">JavaScript</Tag>
+        <Tag size='lg' color="green">Tailwind</Tag>
+        <Tag size='lg' color="green">Bulma</Tag>
+        <Tag size='lg' color="green">Python</Tag>
+        <Tag size='lg' color="orange">HTML</Tag>
+        <Tag size='lg' color="blue">CSS</Tag>
+        <Tag size='lg' color="purple">Lua</Tag>
+        <Tag size='lg' color="purple">Love2D</Tag>
+        <Tag size='lg' color="green">AI</Tag>
+        <Tag size='lg' color="green">Machine Learning</Tag>
+        <Tag size='lg' color="green">LLMs</Tag>
+        <Tag size='lg' color="red">Game Design</Tag>
+        <Tag size='lg' color="red">Game Modding</Tag>
+        <Tag size='lg' color="orange">Git</Tag>
+        <Tag size='lg' color="orange">GNU/Linux</Tag>
+        <Tag size='lg' color="teal">IoT</Tag>
+        <Tag size='lg' color="blue">Windows</Tag>
+        <Tag size='lg' color="yellow">Networking</Tag>
+        </div>
     </div>
 
     <div className="relative z-10 flex flex-col justify-end items-center h-full text-center">

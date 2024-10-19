@@ -17,20 +17,25 @@ const colorClasses: Record<TagColor, string> = {
 
 type TextSize = 'xs' | 'sm' | 'normal' | 'lg' | 'xl'
 
-const textSizes: Record<TextSize, string> = {
-    xs: 'text-xs',
-    sm: 'text-sm',
-    normal: 'text-base',
-    lg: 'text-lg',
-    xl: 'text-xl',
+// Define all possible size combinations
+const sizeClasses = {
+  xs: 'text-xs md:text-xs',
+  sm: 'text-xs md:text-sm',
+  normal: 'text-xs md:text-base',
+  lg: 'text-sm md:text-lg',
+  xl: 'text-base md:text-xl',
 };
 
-const Tag = ({ children, color = 'gray', size = 'normal', smallSize = 'sm' }: { children: React.ReactNode, color?: TagColor, size?: TextSize, smallSize?: TextSize }) => {
+const Tag = ({ children, color = 'gray', size = 'normal' }: {children: any, color: TagColor, size: TextSize}) => {
+  const sizeClass = sizeClasses[size];
+  const colorClass = colorClasses[color];
+
   return (
-    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full md:${textSizes[size]} sm:${textSizes[smallSize]} font-medium ${colorClasses[color]}`}>
+    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full font-medium ${sizeClass} ${colorClass}`}>
       {children}
     </span>
   );
 };
+
 
 export default Tag;

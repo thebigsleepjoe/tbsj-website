@@ -51,7 +51,7 @@ const sizeClasses = {
 
 export const Tag = (
   { children, color = "gray", size = "normal" }: {
-    children: any;
+    children: React.ReactNode;
     color: TagColor;
     size: TextSize;
   },
@@ -70,7 +70,7 @@ export const Tag = (
 
 export const TagDark = (
   { children, color = "gray", size = "normal" }: {
-    children: any;
+    children: React.ReactNode;
     color: TagColor;
     size: TextSize;
   },

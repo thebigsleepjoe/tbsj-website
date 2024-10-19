@@ -4,7 +4,9 @@ import { TagDark } from './tag';
 
 export function Hero() {
   return (
-    <div className='-mt-16 -z-10 relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden'>
+    <div className='xl:-mt-16 -z-10 relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden md:pb-32 pb-0'>
+
+      {/* This is for the gradients */}
       <div className='-mt-16 -z-10 absolute inset-0'>
         <img
           src='https://images.unsplash.com/photo-1628114855639-f8294222fdc2?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -20,14 +22,14 @@ export function Hero() {
       </div>
 
       {/* The hero text in the left-center */}
-      <div className='md:-mt-16 relative z-10 flex flex-col justify-center items-center h-full text-center'>
+      <div className='-mt-16 relative z-10 flex flex-col justify-center items-center h-full text-center'>
         <h1 className='md:text-7xl text-3xl font-bold leading-tight mb-4'>
           @thebigsleepjoe
         </h1>
         <p className='md:text-3xl text-sm text-gray-300 mb-2'>
           Software Engineer • Web Developer • IT Specialist
         </p>
-        <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs md:mt-32 mt-16 justify-center'>
+        <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs lg:mt-20 md:mt-16 mt-12 justify-center'>
           <TagDark size='lg' color='blue'>React</TagDark>
           <TagDark size='lg' color='blue'>TypeScript</TagDark>
           <TagDark size='lg' color='blue'>Next.js</TagDark>
@@ -49,11 +51,14 @@ export function Hero() {
           <TagDark size='lg' color='teal'>IoT</TagDark>
           <TagDark size='lg' color='blue'>Windows</TagDark>
           <TagDark size='lg' color='yellow'>Networking</TagDark>
-        </div>
+          <TagDark size='lg' color='purple'>Media</TagDark>
+          <TagDark size='lg' color='purple'>Video</TagDark>
+          <TagDark size='lg' color='green'>Editing</TagDark>
+          </div>
       </div>
 
       <div className='z-10 flex flex-col items-center h-full text-center p-0'>
-        <div className='text-lg text-gray-300 animate-bounce -mt-16'>
+        <div className='text-lg text-gray-300 animate-bounce -mt-32 md:-mt-16 lg:-mt-8'>
           <span className='mr-2'>See more</span>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>

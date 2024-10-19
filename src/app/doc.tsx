@@ -29,13 +29,13 @@ export function DocElement(
 ) {
   const Component = as;
   const baseStyles = {
-    h1: "text-4xl md:text-6xl font-bold mb-6",
-    h2: "text-3xl md:text-5xl font-semibold mb-5",
-    h3: "text-2xl md:text-4xl font-semibold mb-4",
-    h4: "text-xl md:text-3xl font-medium mb-4",
-    h5: "text-lg md:text-2xl font-medium mb-4",
-    h6: "text-base md:text-xl font-medium mb-4",
-    p: "text-lg md:text-2xl mb-4",
+    h1: "text-4xl md:text-6xl font-bold mb-10 mt-6",
+    h2: "text-3xl md:text-5xl font-semibold mb-6 mt-5",
+    h3: "text-2xl md:text-4xl font-semibold mb-5 mt-4",
+    h4: "text-xl md:text-3xl font-medium mb-4 mt-4",
+    h5: "text-lg md:text-2xl font-medium mb-4 mt-4",
+    h6: "text-base md:text-xl font-medium mb-4 mt-4",
+    p: "text-lg md:text-2xl mb-4 mt-2",
   };
 
   return (

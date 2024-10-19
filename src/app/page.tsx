@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { TagDark } from "./tag";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export function Hero() {
   return (
@@ -51,8 +52,11 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col justify-end items-center h-full text-center">
-        <p className="text-1g text-gray-500 mb-8">More ⥕</p>
+      <div className="z-10 flex flex-col items-center h-full text-center p-0">
+        <div className="text-lg text-gray-300 animate-bounce">
+          <span className="mr-2">See more</span>
+          <FontAwesomeIcon icon={faArrowDown} />
+        </div>
       </div>
     </div>
   );

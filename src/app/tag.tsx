@@ -79,7 +79,9 @@ export const TagDark = (
   const colorClass = colorClassesDark[color];
 
   return (
-    <div className={`inline-flex p-[2px] ${colorClass} rounded-full ${sizeClass}`}>
+    <div
+      className={`inline-flex p-[2px] ${colorClass} rounded-full ${sizeClass}`}
+    >
       <div
         className={`bg-black h-full w-full rounded-full px-2.5 py-0.5 font-medium`}
       >

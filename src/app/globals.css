@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: dark;
   --background: #ffffff;
   --foreground: #171717;
   --background-gradient-start: #0a031a;

@@ -54,6 +54,8 @@ export function Hero() {
           <TagDark size='lg' color='purple'>Media</TagDark>
           <TagDark size='lg' color='purple'>Video</TagDark>
           <TagDark size='lg' color='green'>Editing</TagDark>
+          <TagDark size='lg' color='red'>Data Analysis</TagDark>
+          <TagDark size='lg' color='yellow'>Web Scraping</TagDark>
           </div>
       </div>
 

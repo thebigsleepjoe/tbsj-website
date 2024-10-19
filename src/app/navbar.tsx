@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   faAddressBook,
+  faBars,
   faBook,
   faCodeBranch,
   faMoon,
-  faBars,
   IconDefinition,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function NavbarItem({
   href,
@@ -37,7 +37,8 @@ export function Navbar() {
   return (
     <div className="relative">
       {/* Adjusted gradient overlay */}
-      <div className="h-8 absolute inset-x-0 bottom-0 bg-gradient-to-b from-gray-900/0 to-gray-900/50 pointer-events-none"></div>
+      <div className="h-8 absolute inset-x-0 bottom-0 bg-gradient-to-b from-gray-900/0 to-gray-900/50 pointer-events-none">
+      </div>
 
       <nav className="bg-gradient-to-r from-gray-900 to-sky-950 font-sans px-6 shadow w-full z-10">
         <div className="flex items-center justify-between h-16">

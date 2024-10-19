@@ -1,6 +1,6 @@
 import React from 'react';
 
-type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'hr';
+type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'hr' | 'a';
 
 interface DocProps {
   children: React.ReactNode;
@@ -10,6 +10,7 @@ interface DocElementProps {
   as?: HeadingLevel | 'p';
   className?: string;
   children?: React.ReactNode;
+  href?: string;
 }
 
 export function Doc({ children }: DocProps) {
@@ -25,7 +26,7 @@ export function Doc({ children }: DocProps) {
 }
 
 export function DocElement(
-  { as = 'p', className = '', children }: DocElementProps,
+  { as = 'p', className = '', children, href }: DocElementProps,
 ) {
   const Component = as;
   const baseStyles = {
@@ -36,11 +37,12 @@ export function DocElement(
     h5: 'text-lg md:text-2xl font-medium mb-4 mt-8',
     h6: 'text-base md:text-xl font-medium mb-4 mt-8',
     p: 'text-lg md:text-2xl mb-4 mt-2',
-    hr: 'border-gray-700 my-12'
+    hr: 'border-gray-700 my-12',
+    a: 'text-cyan-400',
   };
 
   return (
-    <Component className={`${baseStyles[as]} ${className}`}>
+    <Component className={`${baseStyles[as]} ${className}`} href={href}>
       {children}
     </Component>
   );

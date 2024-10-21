@@ -34,3 +34,27 @@ body {
     text-wrap: balance;
   }
 }
+
+.animate-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animate-underline:hover::before {
+  transform: scaleX(1);
+}
+
+/* Animate the line from the left */
+.animate-underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: purple;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}

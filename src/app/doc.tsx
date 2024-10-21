@@ -15,7 +15,7 @@ interface DocElementProps {
 
 export function Doc({ children }: DocProps) {
   return (
-    <section className='w-full flex justify-center bg-gradient-to-b from-gray-900 to-gray-950'>
+    <section className='w-full flex justify-center bg-gradient-to-b from-gray-900 to-gray-950 py-8 pb-24'>
       <div className='w-full md:w-2/3 2xl:w-5/12'>
         <div className='bg-transparent relative border md:border-2 border-gray-700 shadow-emerald-300 rounded-2xl p-8 md:p-12 2xl:p-20 w-full mt-16'>
           <div className='absolute rounded-2xl inset-0 bg-gradient-to-r from-transparent to-black opacity-30'/>

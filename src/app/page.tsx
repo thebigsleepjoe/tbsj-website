@@ -69,12 +69,12 @@ export default function Home() {
           <DocElement>
             A bot addon for the popular Garry's Mod gamemode Trouble in
             Terrorist Town (TTT), and its derivative, TTT2. Check it out on
-            <a
+            <DocElement
+              as='a'
               href='https://www.github.com/thebigsleepjoe/TTT-Bots-2/'
-              className='text-cyan-400'
             >
               GitHub
-            </a>.
+            </DocElement>.
           </DocElement>
 
           {/* This website */}

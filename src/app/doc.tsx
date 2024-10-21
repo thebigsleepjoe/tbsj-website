@@ -44,7 +44,7 @@ export function DocElement(
     h6: 'text-base md:text-xl font-medium mb-4 mt-8',
     p: 'text-lg md:text-2xl mb-4 mt-2',
     hr: 'border-gray-700 my-12',
-    a: 'text-cyan-400',
+    a: 'ml-2 text-cyan-400',
   };
 
   return (

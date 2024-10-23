@@ -80,7 +80,7 @@ export const TagDark = (
 
   return (
     <div
-      className={`inline-flex p-[2px] ${colorClass} rounded-full ${sizeClass}`}
+      className={`inline-flex p-[2px] ${colorClass} rounded-full ${sizeClass} gradient-rotate`}
     >
       <div
         className={`bg-black h-full w-full rounded-full px-2.5 py-0.5 font-medium`}

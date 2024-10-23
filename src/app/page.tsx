@@ -12,7 +12,7 @@ import { TagDark } from './tag';
 
 export default function Home() {
   return (
-    <div>
+    <section className="pointer-events-none">
       <Hero />
       <Doc>
         <DocElement as='h1'>
@@ -23,13 +23,20 @@ export default function Home() {
           contact info, and make myself look professional with colorful
           gradients and stock images.
         </DocElement>
+        <DocElement>
+          This website is my <b>programming-focused</b> showcase/portfolio.
+          If you're looking for my resume, you can
+          <DocElement as='a' href='/contact'>email me</DocElement>
+          &nbsp;with info (like who you are/are with) and I may send
+          you a proper CV.
+        </DocElement>
         <DocElement as='hr' />
         <DocElement as='h2'>
           About Me
         </DocElement>
         <DocElement>
-          To start, my name is Joe. I go by many names, but professionally I go
-          by 'thebigsleepjoe' and 'Big Joe.'
+          To start, my name is <b>Joe</b>. Shocker. I go by many names, but
+          professionally I go by <b>thebigsleepjoe</b> or <b>Big Joe</b>.
         </DocElement>
         <DocElement>
           I am a hobbyist developer and a professional IT tech. I've worked on
@@ -163,6 +170,6 @@ export default function Home() {
           </DocElement>
         </div>
       </Doc>
-    </div>
+    </section>
   );
 }

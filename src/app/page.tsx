@@ -12,7 +12,7 @@ import { TagDark } from './tag';
 
 export default function Home() {
   return (
-    <section className="pointer-events-none">
+    <section>
       <Hero />
       <Doc>
         <DocElement as='h1'>

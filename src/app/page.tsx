@@ -35,14 +35,14 @@ export default function Home() {
           About Me
         </DocElement>
         <DocElement>
-          To start, my name is <b>Joe</b>. Shocker. I go by many names, but
+          To start, my name is <b>Joe</b>. Shocker! I go by many names, but
           professionally I go by <b>thebigsleepjoe</b> or <b>Big Joe</b>.
         </DocElement>
         <DocElement>
           I am a hobbyist developer and a professional IT tech. I've worked on
           countless projects, most of which never see the light of day, but my
-          biggest projects can be find on my GitHub page or in the Portfolio
-          section of this site.
+          biggest projects can be found on my GitHub page or in the Portfolio
+          section below.
         </DocElement>
         <DocElement>
           I am most passionate about AI and machine learning. This passion

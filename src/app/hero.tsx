@@ -1,14 +1,16 @@
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TagDark } from './tag';
+import Image from 'next/image';
+import heroBkg from '../public/hero-bkg.png';
 
 export function Hero() {
   return (
     <div className='xl:-mt-16 -z-10 relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden md:pb-32 pb-0'>
       {/* This is for the gradients */}
       <div className='-mt-16 -z-10 absolute inset-0'>
-        <img
-          src='https://images.unsplash.com/photo-1628114855639-f8294222fdc2?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        <Image
+          src={heroBkg}
           alt='Background Image'
           className='object-cover object-center w-full h-full'
         />

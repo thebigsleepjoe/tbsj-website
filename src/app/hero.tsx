@@ -32,12 +32,13 @@ export function Hero() {
         </p>
         <div>
           <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs lg:mt-20 md:mt-16 mt-12 mb-12 md:mb-16 justify-center'>
-            <TagDark size='lg' color='purple'>Lua</TagDark>
-            <TagDark size='lg' color='green'>Python</TagDark>
-            <TagDark size='lg' color='yellow'>JavaScript</TagDark>
-            <TagDark size='lg' color='blue'>TypeScript</TagDark>
+            <TagDark size='xl' color='purple'>Lua</TagDark>
+            <TagDark size='xl' color='green'>Python</TagDark>
+            <TagDark size='xl' color='yellow'>JavaScript</TagDark>
+            <TagDark size='xl' color='blue'>TypeScript</TagDark>
+            <TagDark size='xl' color='pink'>PowerShell</TagDark>
           </div>
-          <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs justify-center'>
+          <div className='flex flex-wrap md:gap-2 gap-1 md:max-w-2xl max-w-xs justify-center'>
             <TagDark size='lg' color='blue'>Next.js</TagDark>
             <TagDark size='lg' color='blue'>React</TagDark>
             <TagDark size='lg' color='yellow'>Tailwind</TagDark>

@@ -44,7 +44,7 @@ export function Navbar() {
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center'>
             <a
-              href='#'
+              href='/'
               className='text-2xl no-underline text-gray-400 hover:text-gray-100 hover:animate-pulse'
             >
               <FontAwesomeIcon icon={faMoon} />
@@ -60,9 +60,9 @@ export function Navbar() {
             </button>
           </div>
           <div className='hidden sm:flex'>
-            <NavbarItem href='#' text='About' icon={faBook} />
+            <NavbarItem href='/about' text='About' icon={faBook} />
             <NavbarItem
-              href='#'
+              href='/contact'
               text='Contact'
               icon={faAddressBook}
             />
@@ -76,9 +76,9 @@ export function Navbar() {
         {/* Mobile menu, toggleable */}
         {isOpen && (
           <div className='sm:hidden'>
-            <NavbarItem href='#' text='About' icon={faBook} />
+            <NavbarItem href='/about' text='About' icon={faBook} />
             <NavbarItem
-              href='#'
+              href='/contact'
               text='Contact'
               icon={faAddressBook}
             />

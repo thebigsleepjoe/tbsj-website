@@ -22,8 +22,8 @@ export function Doc({ children }: DocProps) {
       <div className='absolute inset-0 bg-gradient-to-b from-transparent to-gray-950 from-85%' />
       {/* The background image */}
       <div className='absolute inset-0 doc-bkg-img opacity-50 -z-10' />
-      <div className='w-full md:w-2/3 2xl:w-5/12 backdrop-blur-sm'>
-        <div className='bg-transparent relative border md:border-2 border-gray-700 shadow-emerald-300 rounded-2xl p-8 md:p-12 2xl:p-20 w-full mt-16'>
+      <div className='w-full md:w-2/3 xl:w-1/2 backdrop-blur-sm'>
+        <div className='bg-transparent relative border md:border-2 border-gray-700 shadow-emerald-300 rounded-2xl p-8 md:p-12 2xl:p-20 w-full md:mt-16 mt-0'>
           <div className='absolute rounded-2xl inset-0 bg-gradient-to-r from-transparent to-black opacity-30' />
           <div className='absolute rounded-2xl inset-0 bg-gradient-to-b from-transparent to-black opacity-30' />
           <div className='absolute rounded-2xl inset-0 bg-gradient-to-bl from-green-800 to-orange-500 opacity-5' />

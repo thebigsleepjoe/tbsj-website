@@ -63,7 +63,7 @@ export function Hero() {
       </div>
 
       <div className='z-10 flex flex-col items-center h-full text-center p-0'>
-        <div className='text-lg text-gray-300 animate-bounce -mt-32 md:-mt-16 lg:-mt-8'>
+        <div className='text-lg text-gray-300 animate-bounce -mt-16 lg:-mt-8'>
           <span className='mr-2'>See more</span>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>

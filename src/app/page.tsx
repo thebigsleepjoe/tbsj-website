@@ -72,9 +72,13 @@ export default function Home() {
             hosted on my Raspberry PI 5 via Cloudflare tunnel.
           </DocElement>
           <DocElement>
-            I plan to make this website's code fully public, but I've got to
-            finish it first. When I do, you will find the link where this text
-            is.
+            The source code for this website can be found on
+            <DocElement
+              as='a'
+              href='https://github.com/thebigsleepjoe/tbsj-website'
+            >
+              GitHub
+            </DocElement>.
           </DocElement>
 
           {/* Sentiment Analysis */}

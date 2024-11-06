@@ -6,8 +6,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: 'Joe',
-  description: "Joe's personal/portfolio website",
+  title: 'thebigsleepjoe',
+  description: "thebigsleepjoe's personal website",
 };
 
 import { Navbar } from './navbar';

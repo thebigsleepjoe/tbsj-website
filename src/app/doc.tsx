@@ -11,6 +11,7 @@ interface DocElementProps {
   className?: string;
   children?: React.ReactNode;
   href?: string;
+  id?: string;
 }
 
 export function Doc({ children }: DocProps) {
@@ -38,7 +39,7 @@ export function Doc({ children }: DocProps) {
 }
 
 export function DocElement(
-  { as = 'p', className = '', children, href }: DocElementProps,
+  { as = 'p', className = '', id, children, href }: DocElementProps,
 ) {
   const Component = as;
   const baseStyles = {
@@ -54,7 +55,7 @@ export function DocElement(
   };
 
   return (
-    <Component className={`${baseStyles[as]} ${className}`} href={href}>
+    <Component className={`${baseStyles[as]} ${className}`} href={href} id={id}>
       {children}
     </Component>
   );

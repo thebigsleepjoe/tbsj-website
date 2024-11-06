@@ -42,7 +42,7 @@ export default function Home() {
           <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
             <TagDark color='purple' size='lg'>Lua</TagDark>
             <TagDark color='green' size='lg'>AI</TagDark>
-            <TagDark color='red' size='lg'>Game Modding</TagDark>
+            <TagDark color='red' size='lg'>Modding</TagDark>
           </div>
           <DocElement>
             A bot addon for the popular Garry's Mod gamemode Trouble in

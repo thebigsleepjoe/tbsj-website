@@ -15,7 +15,7 @@ interface DocElementProps {
 
 export function Doc({ children }: DocProps) {
   return (
-    <section className='w-full flex justify-center py-8 pb-24 relative'>
+    <section className='w-full flex justify-center py-8 pb-24 relative min-h-screen'>
       {/* Top transition to transparency */}
       <div className='absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent to-15%' />
       {/* Bottom transition to opacity */}

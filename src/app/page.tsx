@@ -26,7 +26,7 @@ export default function Home() {
         <DocElement>
           This website is my <b>programming-focused</b> showcase/portfolio.
           If you're looking for my resume, you can
-          <DocElement as='a' href='/contact'>email me</DocElement>
+          <DocElement as='a' href='/about#contact'>email me</DocElement>
           &nbsp;with info (like who you are/are with) and I may send
           you a proper CV.
         </DocElement>

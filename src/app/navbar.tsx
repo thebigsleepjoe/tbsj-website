@@ -62,7 +62,7 @@ export function Navbar() {
           <div className='hidden sm:flex'>
             <NavbarItem href='/about' text='About' icon={faBook} />
             <NavbarItem
-              href='/contact'
+              href='/about#contact'
               text='Contact'
               icon={faAddressBook}
             />
@@ -78,7 +78,7 @@ export function Navbar() {
           <div className='sm:hidden'>
             <NavbarItem href='/about' text='About' icon={faBook} />
             <NavbarItem
-              href='/contact'
+              href='/about#contact'
               text='Contact'
               icon={faAddressBook}
             />

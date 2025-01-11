@@ -1,3 +1,8 @@
+---
+title: How I Learned to Stop Branching and Love the Prod
+date: 1/10/25
+---
+
 # Example Post
 
 This is an example post. It is written in markdown.

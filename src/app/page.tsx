@@ -2,8 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Doc, DocElement } from './doc';
 import { Hero } from './hero';
 import {
+  faAudioDescription,
   faGlasses,
   faHandshake,
+  faHeadphones,
   faMoon,
   faRobot,
   faTrowel,
@@ -48,6 +50,28 @@ export default function Home() {
             <DocElement
               as='a'
               href='https://www.github.com/thebigsleepjoe/TTT-Bots-2/'
+            >
+              GitHub
+            </DocElement>.
+          </DocElement>
+
+          {/* Necesse Ambience */}
+          <DocElement as='h3'>
+            <FontAwesomeIcon icon={faHeadphones} /> Necesse Ambience
+          </DocElement>
+          <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
+            <TagDark color='blue' size='lg'>Java</TagDark>
+            <TagDark color='blue' size='lg'>LWJGL</TagDark>
+            <TagDark color='purple' size='lg'>Modding</TagDark>
+            <TagDark color='indigo' size='lg'>Video Editing</TagDark>
+          </div>
+          <DocElement>
+            A mod that brings custom-picked sounds into the game world of Necesse.
+            This adds footsteps, animal sounds, and global ambience which is
+            dynamically muffled when you move indoors.
+            <DocElement
+              as='a'
+              href='https://www.github.com/thebigsleepjoe/NecesseAmbience/'
             >
               GitHub
             </DocElement>.

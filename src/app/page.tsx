@@ -20,19 +20,18 @@ export default function Home() {
         </DocElement>
         <DocElement>
           Welcome to my personal website. This is where I host my portfolio,
-          contact info, and make myself look professional with colorful
-          gradients and stock images.
+          contact info, and blog. 
         </DocElement>
         <DocElement>
-          This page is my <b>programming-focused</b> showcase/portfolio.
+          This is largely my <b>programming-focused</b> showcase/portfolio.
           If you're looking for my resume, you can
           <DocElement as='a' href='/about#contact'>email me</DocElement>
-          &nbsp;with info (like who you are/are with) and I may send
+          &nbsp;with info (like who you are) and I may send
           you a proper CV.
         </DocElement>
         <DocElement as='hr' />
         <DocElement as='h2'>
-          Portfolio
+          Programming Portfolio
         </DocElement>
         <div className='ml-4'>
           {/* TTT Bots */}
@@ -41,8 +40,7 @@ export default function Home() {
           </DocElement>
           <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
             <TagDark color='purple' size='lg'>Lua</TagDark>
-            <TagDark color='green' size='lg'>AI</TagDark>
-            <TagDark color='red' size='lg'>Modding</TagDark>
+            <TagDark color='purple' size='lg'>Modding</TagDark>
           </div>
           <DocElement>
             A bot addon for the popular Garry's Mod gamemode Trouble in
@@ -60,11 +58,11 @@ export default function Home() {
             <FontAwesomeIcon icon={faMoon} /> bigsleepjoe.com
           </DocElement>
           <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
-            <TagDark color='blue' size='lg'>Typescript</TagDark>
-            <TagDark color='blue' size='lg'>React</TagDark>
-            <TagDark color='blue' size='lg'>Next.js</TagDark>
-            <TagDark color='green' size='lg'>Tailwind</TagDark>
-            <TagDark color='red' size='lg'>GNU/Linux</TagDark>
+            <TagDark color='yellow' size='lg'>Typescript</TagDark>
+            <TagDark color='yellow' size='lg'>React</TagDark>
+            <TagDark color='yellow' size='lg'>Next.js</TagDark>
+            <TagDark color='yellow' size='lg'>Tailwind</TagDark>
+            <TagDark color='gray' size='lg'>GNU/Linux</TagDark>
           </div>
           <DocElement>
             The website you're currently looking at! This is built using
@@ -86,12 +84,11 @@ export default function Home() {
             <FontAwesomeIcon icon={faGlasses} /> YT Comment Analysis
           </DocElement>
           <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
-            <TagDark color='blue' size='lg'>Typescript</TagDark>
+            <TagDark color='yellow' size='lg'>Typescript</TagDark>
             <TagDark color='green' size='lg'>Python</TagDark>
             <TagDark color='green' size='lg'>AI</TagDark>
             <TagDark color='green' size='lg'>Machine Learning</TagDark>
-            <TagDark color='purple' size='lg'>Video</TagDark>
-            <TagDark color='purple' size='lg'>Editing</TagDark>
+            <TagDark color='indigo' size='lg'>Video Editing</TagDark>
           </div>
           <DocElement>
             I scraped tens of thousands of YouTube comments from over a thousand
@@ -122,9 +119,9 @@ export default function Home() {
           </DocElement>
           <div className='flex flex-wrap gap-2 -mt-2 max-w-fit'>
             <TagDark color='green' size='lg'>Python</TagDark>
-            <TagDark color='yellow' size='lg'>Web Scraping</TagDark>
+            <TagDark color='green' size='lg'>Web Scraping</TagDark>
             <TagDark color='green' size='lg'>AI</TagDark>
-            <TagDark color='red' size='lg'>Data Analysis</TagDark>
+            <TagDark color='green' size='lg'>Data Analysis</TagDark>
           </div>
           <DocElement>
             I wrote a scraper for the website

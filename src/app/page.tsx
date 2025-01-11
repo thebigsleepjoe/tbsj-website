@@ -22,7 +22,7 @@ export default function Home() {
         </DocElement>
         <DocElement>
           Welcome to my personal website. This is where I host my portfolio,
-          contact info, and blog. 
+          contact info, and blog.
         </DocElement>
         <DocElement>
           This is largely my <b>programming-focused</b> showcase/portfolio.
@@ -165,35 +165,6 @@ export default function Home() {
             way).
           </DocElement>
         </div>
-        <DocElement as='hr' />
-        <DocElement as='h2'>
-          About Me
-        </DocElement>
-        <DocElement>
-          I go by many names, online I go by <b>thebigsleepjoe</b>, but you can
-          call me Joe for short.
-        </DocElement>
-        <DocElement>
-          I am a hobbyist developer and a professional IT tech. I've worked on
-          many projects, most of which never see the light of day, but my
-          best projects can be found on my GitHub page or in the Portfolio
-          section.
-        </DocElement>
-        <DocElement>
-          I am most passionate about AI and machine learning. This passion
-          manefests in my modding career: I've made countless mods-- most never
-          seeing the light of day--but many focus on adding CPU players (bots)
-          to games that don't natively support them.
-        </DocElement>
-        <DocElement>
-          In my spare time I play games, watch/create videos, code, and learn
-          about any tech that interests me. I originally got into the tech field
-          through playing Roblox as a child. I started by making free asset
-          games, and slowly moved onto actually making them myself. They never
-          got popular, but I learned a lot from them. With time, I branched out
-          to modding games and gained strong experience with various scripting
-          languages, like Lua, Python, and JavaScript.
-        </DocElement>
       </Doc>
     </section>
   );

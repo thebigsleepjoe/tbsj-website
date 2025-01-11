@@ -11,15 +11,33 @@ export default function About() {
             Who are you?
         </DocElement>
         <DocElement>
-            I am a hobbyist developer and a professional IT tech.
-            I've worked on many projects, most of which are small or
-            incomplete. You can find my biggest projects on my
-            <DocElement as='a' href='https://www.github.com/thebigsleepjoe'>GitHub</DocElement>.
+          I go by many names, online I go by <b>thebigsleepjoe</b>, but you can
+          call me Joe for short.
         </DocElement>
         <DocElement>
-            To avoid repeating myself, please visit the
-            <DocElement as='a' href='/'>landing page</DocElement>
-            &nbsp;if you want to learn more about who I am.
+          I am a hobbyist developer and a professional IT tech. I've worked on
+          many projects, most of which never see the light of day, but my
+          best projects can be found on my GitHub page or in the Portfolio
+          section.
+        </DocElement>
+        <DocElement>
+          I am most passionate about AI and machine learning. This passion
+          manefests in my modding career: I've made countless mods-- most never
+          seeing the light of day--but many focus on adding CPU players (bots)
+          to games that don't natively support them.
+        </DocElement>
+        <DocElement>
+          In my spare time I play games, watch/create videos, code, and learn
+          about any tech that interests me. I originally got into the tech field
+          through playing Roblox as a child. I started by making free asset
+          games, and slowly moved onto actually making them myself. They never
+          got popular, but I learned a lot from them. With time, I branched out
+          to modding games and gained strong experience with various scripting
+          languages, like Lua, Python, and JavaScript.
+        </DocElement>
+        <DocElement>
+            You can find my biggest projects on my
+            <DocElement as='a' href='https://www.github.com/thebigsleepjoe'>GitHub</DocElement>.
         </DocElement>
 
         <DocElement as='h3' id="contact">
@@ -41,6 +59,15 @@ export default function About() {
             Please understand that I do NOT work for free, unless
             it is for an open source project that I am personally
             interested in. 
+        </DocElement>
+
+        <DocElement as='h3'>
+            Why the name?
+        </DocElement>
+        <DocElement>
+            I wish there were a deeper meaning, but the name mostly came from a random
+            name generator. I do have sleep issues, which is why "bigsleep" is in the name.
+            Obviously my name is Joe, so that's why that is there. I have never watched "The Big Sleep."
         </DocElement>
 
         <DocElement as='h3'>

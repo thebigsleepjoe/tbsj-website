@@ -28,43 +28,45 @@ export function Hero() {
           @thebigsleepjoe
         </h1>
         <p className='md:text-3xl text-sm text-gray-300 mb-2'>
-          Software Engineer • Web Developer • IT Specialist
+          Programmer • Web Developer • IT Tech 
         </p>
         <div>
           <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs lg:mt-20 md:mt-16 mt-12 mb-12 md:mb-16 justify-center'>
             <TagDark size='xl' color='purple'>Lua</TagDark>
             <TagDark size='xl' color='green'>Python</TagDark>
-            <TagDark size='xl' color='yellow'>JavaScript</TagDark>
-            <TagDark size='xl' color='blue'>TypeScript</TagDark>
+            <TagDark size='xl' color='yellow'>JS/TS</TagDark>
+            <TagDark size='xl' color='blue'>Java</TagDark>
             <TagDark size='xl' color='pink'>PowerShell</TagDark>
+            <TagDark size='xl' color='indigo'>Media</TagDark>
           </div>
           <div className='flex flex-wrap md:gap-2 gap-1 md:max-w-2xl max-w-xs justify-center'>
-            <TagDark size='lg' color='blue'>Next.js</TagDark>
-            <TagDark size='lg' color='blue'>React</TagDark>
+            <TagDark size='lg' color='purple'>Love2D</TagDark>
+            <TagDark size='lg' color='purple'>Modding</TagDark>
+            <TagDark size='lg' color='green'>AI</TagDark>
+            <TagDark size='lg' color='green'>ML</TagDark>
+            <TagDark size='lg' color='green'>LLMs</TagDark>
+            <TagDark size='lg' color='green'>Web Scraping</TagDark>
+            <TagDark size='lg' color='green'>Data Analysis</TagDark>
+            <TagDark size='lg' color='yellow'>Next.js</TagDark>
+            <TagDark size='lg' color='yellow'>React</TagDark>
             <TagDark size='lg' color='yellow'>Tailwind</TagDark>
             <TagDark size='lg' color='yellow'>Bulma</TagDark>
             <TagDark size='lg' color='yellow'>CSS</TagDark>
             <TagDark size='lg' color='yellow'>HTML</TagDark>
-            <TagDark size='lg' color='purple'>Love2D</TagDark>
-            <TagDark size='lg' color='green'>AI</TagDark>
-            <TagDark size='lg' color='green'>ML</TagDark>
-            <TagDark size='lg' color='green'>LLMs</TagDark>
-            <TagDark size='lg' color='purple'>Modding</TagDark>
-            <TagDark size='lg' color='red'>Git</TagDark>
+            <TagDark size='lg' color='blue'>LWJGL</TagDark>
+            <TagDark size='lg' color='indigo'>Video Editing</TagDark>
+            <TagDark size='lg' color='indigo'>Image Editing</TagDark>
+            <TagDark size='lg' color='gray'>Git</TagDark>
             <TagDark size='lg' color='gray'>GNU/Linux</TagDark>
             <TagDark size='lg' color='gray'>Windows</TagDark>
             <TagDark size='lg' color='gray'>Networking</TagDark>
-            <TagDark size='lg' color='orange'>Media</TagDark>
-            <TagDark size='lg' color='orange'>Video Editing</TagDark>
-            <TagDark size='lg' color='red'>Data Analysis</TagDark>
-            <TagDark size='lg' color='green'>Web Scraping</TagDark>
           </div>
         </div>
       </div>
 
       <div className='z-10 flex flex-col items-center h-full text-center p-0'>
         <div className='text-lg text-gray-300 animate-bounce -mt-16 lg:-mt-8'>
-          <span className='mr-2'>See more</span>
+          <span className='mr-2'>Scroll down</span>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>
       </div>

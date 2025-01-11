@@ -1,6 +1,7 @@
 ---
 title: How I Learned to Stop Branching and Love the Prod
 date: 1/10/25
+excerpt: This is a demo article
 ---
 
 # Example Post

@@ -22,7 +22,7 @@ export default function About() {
         </DocElement>
         <DocElement>
           I am most passionate about AI and machine learning. This passion
-          manefests in my modding career: I've made countless mods-- most never
+          manifests in my modding career: I've made countless mods-- most never
           seeing the light of day--but many focus on adding CPU players (bots)
           to games that don't natively support them.
         </DocElement>

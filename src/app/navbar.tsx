@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import {
   faAddressBook,
   faBars,
+  faBlog,
   faBook,
   faCodeBranch,
   faMoon,
@@ -71,6 +72,11 @@ export function Navbar() {
               text='GitHub'
               icon={faCodeBranch}
             />
+            <NavbarItem
+              href='/posts'
+              text='Blog'
+              icon={faBlog}
+            />
           </div>
         </div>
         {/* Mobile menu, toggleable */}
@@ -86,6 +92,11 @@ export function Navbar() {
               href='https://www.github.com/thebigsleepjoe'
               text='GitHub'
               icon={faCodeBranch}
+            />
+            <NavbarItem
+              href='/posts'
+              text='Blog'
+              icon={faBlog}
             />
           </div>
         )}

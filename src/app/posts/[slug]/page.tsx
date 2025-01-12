@@ -20,6 +20,8 @@ export function blogify(htmlContent: string): string {
     htmlContent = htmlContent.replace(new RegExp(`<${key}>`, 'g'), `<${key} class="${baseStyles[key as keyof typeof baseStyles]}">`);
   }
 
+  htmlContent = htmlContent.replace(`<a `, `<a class="${baseStyles.a}"`);
+
   return htmlContent;
 }
 

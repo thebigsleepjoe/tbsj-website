@@ -10,7 +10,7 @@ export type Post = {
   excerpt?: string;
 };
 
-export function getAllPosts(): Post[] {
+function getAllPosts(): Post[] {
   // Get files under /posts
   const postsDirectory = path.join(process.cwd(), 'posts');
   const filenames = fs.readdirSync(postsDirectory);
@@ -45,7 +45,7 @@ export function getAllPosts(): Post[] {
 
 import Link from 'next/link';
 
-export function PostListing(post: Post) {
+function PostListing(post: Post) {
   return (
     <li
       key='post.slug'

@@ -25,15 +25,14 @@ export default function Home() {
           contact info, and blog.
         </DocElement>
         <DocElement>
-          This is largely my <b>programming-focused</b> showcase/portfolio.
-          If you're looking for my resume, you can
+          This is largely my <b>programming-focused</b>{' '}
+          showcase/portfolio. If you're looking for my resume, you can
           <DocElement as='a' href='/about#contact'>email me</DocElement>
-          &nbsp;with info (like who you are) and I may send
-          you a proper CV.
+          &nbsp;with info (like who you are) and I may send you a proper CV.
         </DocElement>
         <DocElement>
-          I also have a blog! I don't write much, but if you like
-          tech stuff, you can read it
+          I also have a blog! I don't write much, but if you like tech stuff,
+          you can read it
           <DocElement as='a' href='/posts'>here</DocElement>.
         </DocElement>
         <DocElement as='hr' />
@@ -71,9 +70,9 @@ export default function Home() {
             <TagDark color='indigo' size='lg'>Video Editing</TagDark>
           </div>
           <DocElement>
-            A mod that brings custom-picked sounds into the game world of Necesse.
-            This adds footsteps, animal sounds, and global ambience which is
-            dynamically muffled when you move indoors.
+            A mod that brings custom-picked sounds into the game world of
+            Necesse. This adds footsteps, animal sounds, and global ambience
+            which is dynamically muffled when you move indoors.
             <DocElement
               as='a'
               href='https://www.github.com/thebigsleepjoe/NecesseAmbience/'

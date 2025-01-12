@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useEffect, useState } from 'react';
 
 interface ObfuscatedEmailProps {
@@ -7,7 +7,9 @@ interface ObfuscatedEmailProps {
   tld: string;
 }
 
-export default function ObfuscatedEmail({ user, domain, tld }: ObfuscatedEmailProps) {
+export default function ObfuscatedEmail(
+  { user, domain, tld }: ObfuscatedEmailProps,
+) {
   const [email, setEmail] = useState<string>('');
 
   useEffect(() => {
@@ -17,7 +19,7 @@ export default function ObfuscatedEmail({ user, domain, tld }: ObfuscatedEmailPr
   if (!email) return null; // Prevent rendering until the email is set
 
   return (
-    <a href={`mailto:${email}`} aria-label="Email address">
+    <a href={`mailto:${email}`} aria-label='Email address'>
       {email}
     </a>
   );

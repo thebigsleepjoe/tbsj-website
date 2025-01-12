@@ -46,7 +46,7 @@ body {
 
 /* Animate the line from the left */
 .animate-underline::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
@@ -66,7 +66,7 @@ body {
 }
 
 .gradient-rotate::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -74,7 +74,7 @@ body {
   bottom: 0;
   background: white;
   opacity: 0.1;
-  height:50%;
+  height: 50%;
   transform-origin: center;
   animation: animate-rotate 10s linear infinite;
   z-index: -1;
@@ -100,7 +100,7 @@ body {
 
 @keyframes shimmer-animation {
   100% {
-    mask-position: left
+    mask-position: left;
   }
 }
 

@@ -28,7 +28,7 @@ export function Hero() {
           @thebigsleepjoe
         </h1>
         <p className='md:text-3xl text-sm text-gray-300 mb-2'>
-          Programmer • Web Developer • IT Tech 
+          Programmer • Web Developer • IT Tech
         </p>
         <div>
           <div className='flex flex-wrap md:gap-3 gap-2 md:max-w-2xl max-w-xs lg:mt-20 md:mt-16 mt-12 mb-12 md:mb-16 justify-center'>

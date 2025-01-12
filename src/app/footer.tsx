@@ -1,4 +1,12 @@
-import { faBook, faCodeBranch, faEnvelope, faHeart, faHeartBroken, faMailBulk, faMailReply } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBook,
+  faCodeBranch,
+  faEnvelope,
+  faHeart,
+  faHeartBroken,
+  faMailBulk,
+  faMailReply,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function Footer() {
@@ -39,10 +47,13 @@ export function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex justify-center w-full mt-16">
+        <div className='flex justify-center w-full mt-16'>
           <div>
             <span className='mr-2'>Made by Joe, with</span>
-            <FontAwesomeIcon icon={faHeartBroken} className='text-red-600 hover:animate-spin' />
+            <FontAwesomeIcon
+              icon={faHeartBroken}
+              className='text-red-600 hover:animate-spin'
+            />
           </div>
         </div>
       </div>

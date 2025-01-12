@@ -31,6 +31,11 @@ export default function Home() {
           &nbsp;with info (like who you are) and I may send
           you a proper CV.
         </DocElement>
+        <DocElement>
+          I also have a blog! I don't write much, but if you like
+          tech stuff, you can read it
+          <DocElement as='a' href='/posts'>here</DocElement>.
+        </DocElement>
         <DocElement as='hr' />
         <DocElement as='h2'>
           Programming Portfolio

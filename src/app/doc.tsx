@@ -38,21 +38,22 @@ export function Doc({ children }: DocProps) {
   );
 }
 
+export const baseStyles = {
+  h1: 'text-4xl md:text-7xl font-bold mb-6 mt-8',
+  h2: 'text-3xl md:text-5xl font-semibold mb-6 mt-8',
+  h3: 'text-2xl md:text-4xl font-semibold mb-5 mt-8',
+  h4: 'text-xl md:text-3xl font-medium mb-4 mt-8',
+  h5: 'text-lg md:text-2xl font-medium mb-4 mt-8',
+  h6: 'text-base md:text-xl font-medium mb-4 mt-8',
+  p: 'text-lg md:text-2xl mb-4 mt-2',
+  hr: 'border-gray-700 my-12',
+  a: 'ml-1 text-cyan-500 hover:text-cyan-300 transition-colors animate-underline',
+};
+
 export function DocElement(
   { as = 'p', className = '', id, children, href }: DocElementProps,
 ) {
   const Component = as;
-  const baseStyles = {
-    h1: 'text-4xl md:text-7xl font-bold mb-6 mt-8',
-    h2: 'text-3xl md:text-5xl font-semibold mb-6 mt-8',
-    h3: 'text-2xl md:text-4xl font-semibold mb-5 mt-8',
-    h4: 'text-xl md:text-3xl font-medium mb-4 mt-8',
-    h5: 'text-lg md:text-2xl font-medium mb-4 mt-8',
-    h6: 'text-base md:text-xl font-medium mb-4 mt-8',
-    p: 'text-lg md:text-2xl mb-4 mt-2',
-    hr: 'border-gray-700 my-12',
-    a: 'ml-1 text-cyan-500 hover:text-cyan-300 transition-colors animate-underline',
-  };
 
   return (
     <Component className={`${baseStyles[as]} ${className}`} href={href} id={id}>

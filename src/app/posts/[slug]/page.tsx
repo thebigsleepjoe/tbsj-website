@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { Doc, DocElement } from '../../doc';
+import { baseStyles, Doc, DocElement } from '../../doc';
+import { parseFromString } from 'dom-parser';
 
 // Generate static params
 export async function generateStaticParams() {
@@ -12,6 +13,14 @@ export async function generateStaticParams() {
   return filenames.map((filename) => ({
     slug: filename.replace(/\.md$/, ''),
   }));
+}
+
+export function blogify(htmlContent: string): string {
+  for (const key in baseStyles) {
+    htmlContent = htmlContent.replace(new RegExp(`<${key}>`, 'g'), `<${key} class="${baseStyles[key as keyof typeof baseStyles]}">`);
+  }
+
+  return htmlContent;
 }
 
 // Page component
@@ -24,7 +33,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const { data: frontmatter, content } = matter(fileContents);
 
   // Convert markdown to HTML
-  const htmlContent = marked(content);
+  const htmlContent = await marked(content);
 
   const slicedTitle = frontmatter.title.length > 24 ? frontmatter.title.slice(0, 24) + "..." : frontmatter.title;
 
@@ -32,9 +41,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
     <Doc>
       <article>
         <header className="mb-8">
-          
+
           {/* breadcrumb trail */}
-          <div className='text-gray-400 mb-2'>
+          <div className='text-gray-400 mb-1'>
             <a className='' href="/posts">Posts</a>
             <span className="mx-2">&gt;</span>
             <span>{slicedTitle}</span>
@@ -45,13 +54,13 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </h1>
           {frontmatter.date && (
             <time className="text-gray-600">
-              {new Date(frontmatter.date).toLocaleDateString()}
+              CREATED {new Date(frontmatter.date).toLocaleDateString()}
             </time>
           )}
         </header>
         <div
           className="prose"
-          dangerouslySetInnerHTML={{ __html: htmlContent }}
+          dangerouslySetInnerHTML={{ __html: blogify(htmlContent) }}
         />
       </article>
     </Doc>

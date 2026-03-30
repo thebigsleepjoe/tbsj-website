@@ -1,19 +1,15 @@
-import { Doc, DocElement } from '../doc';
-import ObfuscatedEmail from './address';
+import { Doc, DocElement } from "../doc";
+import ObfuscatedEmail from "./address";
 
 export default function About() {
   return (
     <Doc>
-      <DocElement as='h1'>
-        About
-      </DocElement>
+      <DocElement as="h1">About</DocElement>
 
-      <DocElement as='h3'>
-        Who are you?
-      </DocElement>
+      <DocElement as="h3">Who are you?</DocElement>
       <DocElement>
-        I go by many names, online I go by{' '}
-        <b>thebigsleepjoe</b>, but you can call me Joe for short.
+        I go by many names, online I go by <b>thebigsleepjoe</b>, but you can
+        call me Joe for short.
       </DocElement>
       <DocElement>
         I am a hobbyist developer and a professional IT tech. I've worked on
@@ -37,19 +33,20 @@ export default function About() {
       </DocElement>
       <DocElement>
         You can find my biggest projects on my
-        <DocElement as='a' href='https://www.github.com/thebigsleepjoe'>
+        <DocElement as="a" href="https://www.github.com/thebigsleepjoe">
           GitHub
-        </DocElement>.
+        </DocElement>
+        .
       </DocElement>
 
-      <DocElement as='h3' id='contact'>
+      <DocElement as="h3" id="contact">
         How do I contact you?
       </DocElement>
       <DocElement>
         You can contact me at the below email address:
         <br />
-        <DocElement as='a'>
-          <ObfuscatedEmail user='website' domain='bigjoe' tld='dev' />
+        <DocElement as="a">
+          <ObfuscatedEmail user="website" domain="bigjoe" tld="dev" />
         </DocElement>
       </DocElement>
       <DocElement>
@@ -61,9 +58,7 @@ export default function About() {
         source project that I am personally interested in.
       </DocElement>
 
-      <DocElement as='h3'>
-        Why the name?
-      </DocElement>
+      <DocElement as="h3">Why the name?</DocElement>
       <DocElement>
         I wish there were a deeper meaning, but the name mostly came from a
         random name generator. I do have sleep issues, which is why "bigsleep"
@@ -71,9 +66,7 @@ export default function About() {
         have never watched "The Big Sleep."
       </DocElement>
 
-      <DocElement as='h3'>
-        About This Website
-      </DocElement>
+      <DocElement as="h3">About This Website</DocElement>
       <DocElement>
         This website is very simple. The tech stack is Next.js (and thus React),
         Tailwind for the bulk of CSS, and some small custom CSS

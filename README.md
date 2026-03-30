@@ -13,3 +13,23 @@ Check out the website [here](https://www.bigsleepjoe.com/). Hopefully it stays u
 
 You may re-use/redistribute this as you please, but you must credit the original should you
 create a derivative of this work or re-use significant portions of my code.
+
+## Usage
+
+This part is mostly for myself.
+
+1. Install Deno (ideally)
+
+### Dev Env
+
+1. `deno run dev`
+
+### Building
+
+1. `deno run build`
+2. `deno run start`
+
+### Contributing/updating
+
+1. Install Prettier extension, make sure to format regularly
+2. enjoy the hell that is nextjs and .tsx files
